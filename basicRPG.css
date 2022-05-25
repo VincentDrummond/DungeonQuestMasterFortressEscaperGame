@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --lightblack: #212121;
+    --limegreen: #32cd32;
+    --darklime: #2cb52c;
+    --blood: #990f0f;
+}
+
+html {
+    font-size: 10px;
+}
+    
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--limegreen);
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align:center;
+}
+
+.gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 60px;
+
+}
+
+.mainControls {
+    width: 150px;
+    height: 30px;
+    margin: 30px;
+    background-color: var(--darklime);
+    border: 3px solid var(--limegreen);
+    box-shadow: var(--darklime) 1px 1px 10px 4px;
+    transition: all 300ms ease-in-out;
+    color: var(--black);
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* .gameControlsHidden {
+    visibility: hidden;
+} */
+
+.gameControls {
+    width: 150px;
+    height: 30px;
+    margin: 30px;
+    text-align: center;
+    background-color: var(--darklime);
+    border: 3px solid var(--limegreen);
+    box-shadow: var(--darklime) 1px 1px 10px 4px;
+    transition: all 300ms ease-in-out;
+    color: var(--black);
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.gameHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameInstructions {
+    width: 50%;
+    text-align: justify;
+    font-size: 2.4rem;
+}
+.gameOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.option {
+    margin: 20px;
+}
+
+.welcome {
+    font-size: 3rem;
+    text-align:center;
+    margin-bottom: 30px;
+}
